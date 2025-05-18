@@ -5,9 +5,13 @@
   "description": "Enables/disables Bionic Text.",
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "storage"
   ],
   "action": {
-    "default_popup": "popup.html"
+    "default_title": "Bionic Text"
+  },
+  "background": {
+    "service_worker": "./bionic-text-service-worker.js"
   }
 }
